@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zip file</title>
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">
+            Compress Files to ZIP File
+        </h1>
+        <form action="/compressfiles" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Upload Files:</label>
+                <input class="form-control" type="file" name="file" id="" multiple required>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-block btn-danger">
+                    Download ZIP File
+                </button>
+            </div>
+        </form>
+</body>
+
+</html>
